@@ -1,12 +1,13 @@
-section {
-  height: 100vh;
-  background: ghostwhite;
+section.container {
+  height: 90vh;
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-section h2 {
+section.container h2 {
   font-size: 5rem;
-  color: red;
+  color: #444;
 }
