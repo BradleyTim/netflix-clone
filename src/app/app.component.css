@@ -2,9 +2,6 @@ section.container {
   height: 92vh;
   width: 80%;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 section.container h2 {

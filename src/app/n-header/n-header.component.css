@@ -1,6 +1,7 @@
 header {
   height: 8vh;
   width: 100vw;
+  margin-bottom: 1rem;
 }
 
 header nav {
@@ -29,10 +30,24 @@ header ul {
 header ul li {
   font-size: 1.5rem;
   letter-spacing: .15rem;
+  text-align: right;
 }
 
 header ul li a {
   color: #444;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  header h1 {
+    font-size: 1.5rem;
+    flex: 2;
+  }
+
+  header ul li {
+    font-size: 1.15rem;
+    letter-spacing: .15rem;
+    text-align: right;
+  }
 }
