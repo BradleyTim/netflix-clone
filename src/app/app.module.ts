@@ -3,7 +3,7 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 
 import { AppComponent } from "./app.component";
-import { NHeaderComponent } from "./n-header/n-header.component";
+import { NHeaderComponent } from "./header/n-header.component";
 import { AboutComponent } from "./about/about.component";
 import { MoviesComponent } from "./movies/movies.component";
 import { MovieDetailComponent } from "./movie-detail/movie-detail.component";

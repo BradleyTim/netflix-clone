@@ -4,6 +4,8 @@
     class="movies"
     *ngFor="let movie of movies"
   >
-    <h2 class="title">{{ movie.movieName }}</h2>
+    <img [src]="movie.imageUrl" [title]="movie.movieName" />
+    <h3 class="title">{{ movie.movieName }}</h3>
+    <p>Year of production, {{ movie.releaseDate }}</p>
   </div>
 </section>

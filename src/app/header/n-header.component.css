@@ -23,6 +23,19 @@ header h1 a {
   text-decoration: none;
 }
 
+header input {
+  flex: 2;
+  padding: .45rem;
+  font-size: 1rem;
+  outline: steelblue;
+  border: 2px solid coral;
+  border-radius: 5px;
+}
+
+header input:focus {
+  border: 2px solid skyblue;
+}
+
 header ul {
   flex: 1;
   list-style: none;

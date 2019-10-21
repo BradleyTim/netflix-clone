@@ -7,16 +7,26 @@ section {
   grid-row: auto;
 }
 
-a {
-  cursor: pointer;
-}
-
-section div.movies {
+section div {
   border: .5px solid #eee;
   border-radius: 5px;
-  padding: 5rem 1rem;
+  padding: 4rem 1rem;
   text-align: center;
-  background: #ccc;
+  background: #eee;
+}
+
+section div img {
+  width: 100%;
+}
+
+section div h3 {
+  font-size: 1.75rem;
+  color: #444;
+}
+
+section div p {
+  font-size: 1rem;
+  color: #555;
 }
 
 section div.movies:hover {
