@@ -5,14 +5,17 @@ import { RouterModule, Routes } from "@angular/router";
 import { AppComponent } from "./app.component";
 import { NHeaderComponent } from "./n-header/n-header.component";
 import { AboutComponent } from "./about/about.component";
-import { HomeComponent } from "./home/home.component";
+import { MoviesComponent } from "./movies/movies.component";
 import { MovieDetailComponent } from "./movie-detail/movie-detail.component";
+import { FavoritesComponent } from "./favorites/favorites.component";
 
 const routes: Routes = [
-  { path: "", redirectTo: "movies", pathMatch: "full" },
-  { path: "movies", component: HomeComponent },
+  { path: "movies", component: MoviesComponent },
   { path: "movies/:id", component: MovieDetailComponent },
-  { path: "about", component: AboutComponent }
+  { path: "favorites", component: FavoritesComponent },
+  { path: "about", component: AboutComponent },
+  { path: "", redirectTo: "movies", pathMatch: "full" },
+  { path: "**", redirectTo: "movies", pathMatch: "full" }
 ];
 
 @NgModule({
@@ -20,8 +23,9 @@ const routes: Routes = [
     AppComponent,
     NHeaderComponent,
     AboutComponent,
-    HomeComponent,
-    MovieDetailComponent
+    MoviesComponent,
+    MovieDetailComponent,
+    FavoritesComponent
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],

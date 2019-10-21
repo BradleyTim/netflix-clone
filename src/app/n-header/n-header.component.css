@@ -26,12 +26,14 @@ header h1 a {
 header ul {
   flex: 1;
   list-style: none;
+  display: flex;
 }
 
 header ul li {
   font-size: 1.5rem;
   letter-spacing: .15rem;
   text-align: right;
+  padding: .75rem;
 }
 
 header ul li a {
