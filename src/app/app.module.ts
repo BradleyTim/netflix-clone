@@ -8,7 +8,7 @@ import { AboutComponent } from "./about/about.component";
 import { MoviesComponent } from "./movies/movies.component";
 import { MovieDetailComponent } from "./movie-detail/movie-detail.component";
 import { FavoritesComponent } from "./favorites/favorites.component";
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
 
 const routes: Routes = [
   { path: "movies", component: MoviesComponent },
@@ -16,7 +16,8 @@ const routes: Routes = [
   { path: "favorites", component: FavoritesComponent },
   { path: "about", component: AboutComponent },
   { path: "", redirectTo: "movies", pathMatch: "full" },
-  { path: "**", component: PageNotFoundComponent}
+  { path: "**", component: PageNotFoundComponent }
+];
 
 @NgModule({
   declarations: [
