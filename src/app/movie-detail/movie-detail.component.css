@@ -1,0 +1,35 @@
+section.movies__detail {
+  width: 80%;
+  height: 50vh;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+section img {
+  display: block;
+  width: 100%;
+}
+
+section h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+section p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+section a {
+  padding: .25rem 2rem;
+  border: .5px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.35rem;
+  cursor: pointer;
+  transition: 0.4s ease-in;
+}
+
+section a:hover {
+  background: #ccc;
+  color: rgb(175, 127, 110);
+}

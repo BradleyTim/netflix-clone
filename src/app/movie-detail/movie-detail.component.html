@@ -1,0 +1,8 @@
+<section class="movies__detail">
+  <img [src]="movie.imageUrl" />
+  <h3>{{ movie.movieName }}</h3>
+  <p>Released on {{ movie.releaseDate }}</p>
+  <div>
+    <a (click)="onBack()">Back</a>
+  </div>
+</section>

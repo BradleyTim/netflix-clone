@@ -1,5 +1,9 @@
 <section class="movie-container" *ngIf="movies.length > 0">
-  <div class="movie" *ngFor="let movie of movies">
+  <div
+    [routerLink]="['/movies', movie.movieId]"
+    class="movies"
+    *ngFor="let movie of movies"
+  >
     <h2 class="title">{{ movie.movieName }}</h2>
   </div>
 </section>

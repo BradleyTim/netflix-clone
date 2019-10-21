@@ -7,13 +7,20 @@ section {
   grid-row: auto;
 }
 
-div.movie {
+a {
+  cursor: pointer;
+}
+
+section div.movies {
   border: .5px solid #eee;
   border-radius: 5px;
   padding: 5rem 1rem;
   text-align: center;
   background: #ccc;
+}
 
+section div.movies:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 500px) {
